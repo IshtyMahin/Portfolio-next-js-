@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "npm run build && netlify deploy --prod"
+    "lint": "next lint"
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^5.10.1",
@@ -20,7 +19,7 @@
     "framer-motion": "^12.6.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.0",
-    "next": "14.1.0", 
+    "next": "15.2.4",
     "next-themes": "^0.4.6",
     "nodemailer": "^6.10.0",
     "prism-react-renderer": "^2.4.1",
