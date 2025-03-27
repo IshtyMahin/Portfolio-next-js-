@@ -1,7 +1,10 @@
 [build]
   command = "npm run build"
-  publish = ".next/serverless"
-  functions = ".next/serverless/pages/api"
+  publish = ".next"
+  functions = ".next/serverless"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NODE_VERSION = "20"
