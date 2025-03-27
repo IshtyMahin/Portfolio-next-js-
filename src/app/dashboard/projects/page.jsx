@@ -4,19 +4,10 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiPlus, FiArrowRight, FiLoader } from "react-icons/fi";
 
-interface Project {
-  _id: string;
-  title: string;
-  description: string;
-  tags: string[];
-  githubFrontend?: string;
-  githubBackend?: string;
-  livePreview?: string;
-  images?: string[];
-}
+
 
 export default function Projects() {
-  const [projects, setProjects] = useState<Project[]>([]);
+  const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
