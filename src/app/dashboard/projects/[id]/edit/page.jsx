@@ -1,6 +1,6 @@
 "use client";
-import ProjectForm from "@/components/dashboard/project/ProjectForm";
 import { useEffect, useState } from "react";
+import ProjectForm from "../../../../../components/dashboard/project/ProjectForm";
 
 export default function EditProject({ params }) {
   const [projectData, setProjectData] = useState(null);

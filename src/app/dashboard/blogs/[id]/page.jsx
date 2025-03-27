@@ -12,8 +12,9 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
+import MarkdownRenderer from "../../../../components/MarkdownRender";
 
-const MarkdownRenderer = dynamic(() => import("@/components/MarkdownRender"), { ssr: false });
+
 
 export default function SingleBlog(params) {
   const router = useRouter();

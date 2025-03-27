@@ -1,9 +1,9 @@
 "use client";
-import MarkdownEditor from "@/components/dashboard/MarkdownEditor";
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FiArrowLeft } from "react-icons/fi";
+import MarkdownEditor from "../MarkdownEditor";
 
 export default function BlogForm({ mode, blogData }) {
   const [title, setTitle] = useState(blogData?.title || "");
