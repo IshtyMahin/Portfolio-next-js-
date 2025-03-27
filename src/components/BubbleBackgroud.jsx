@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const BubbleBackground = () => {
-  const [bubbles, setBubbles] = useState<any[]>([]);
+  const [bubbles, setBubbles] = useState([]);
 
   useEffect(() => {
     const generateBubble = (creationTimeOffset = 0) => {

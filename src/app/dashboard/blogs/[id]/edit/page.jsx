@@ -1,8 +1,8 @@
 "use client";
-import BlogForm from "@/components/dashboard/blog/BlogForm";
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import { FiLoader } from "react-icons/fi";
+import BlogForm from "../../../../../components/dashboard/blog/BlogForm";
 
 export default function EditBlog() {
   const [blogData, setBlogData] = useState(null);

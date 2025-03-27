@@ -10,7 +10,7 @@ export default function ProjectCard({ project }) {
   const [activeImage, setActiveImage] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [autoCycle, setAutoCycle] = useState(false);
-  const [direction, setDirection] = useState<"left" | "right">("right");
+  const [direction, setDirection] = useState("right");
 
   useEffect(() => {
     let interval;

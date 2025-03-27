@@ -1,5 +1,5 @@
-import BubbleBackground from "@/components/BubbleBackgroud";
-import Header from "@/components/Header";
+import BubbleBackground from "../../components/BubbleBackgroud";
+import Header from "../../components/Header";
 
 export default function HomeLayout({ children }) {
   return (

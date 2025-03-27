@@ -1,6 +1,6 @@
-import { connectDB } from "@/utils/db";
-import Project from "@/models/Project";
 import { NextResponse } from "next/server";
+import { connectDB } from "../../../utils/db";
+import Project from "../../../models/Project";
 
 const MAX_IMAGE_SIZE = 10 * 1024 * 1024;
 

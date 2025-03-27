@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import Message from "@/models/Message";
-import { connectDB } from "@/utils/db";
-import { sendEmail, createReplyTemplate } from "@/utils/sendEmail";
+import { connectDB } from "../../../../../utils/db";
+import Message from "../../../../../models/Message";
+import { createReplyTemplate, sendEmail } from "../../../../../utils/sendEmail";
 
 export async function POST(request, { params }) {
   try {

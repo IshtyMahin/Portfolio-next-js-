@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import ProjectCard from "./ProjectCard";
 import { FiLoader } from "react-icons/fi";
 import { motion } from "framer-motion";
+import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);

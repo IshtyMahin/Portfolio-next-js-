@@ -1,16 +1,6 @@
-import mongoose, { Schema, Document } from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
-interface IProject extends Document {
-  title: string;
-  description: string;
-  images: string[];
-  tags: string[];
-  githubFrontend: string;
-  githubBackend: string;
-  livePreview: string;
-}
-
-const ProjectSchema = new Schema<IProject>({
+const ProjectSchema = new Schema({
   title: String,
   description: String,
   images: [String],
@@ -20,5 +10,4 @@ const ProjectSchema = new Schema<IProject>({
   livePreview: String,
 });
 
-export default mongoose.models.Project ||
-  mongoose.model<IProject>("Project", ProjectSchema);
+export default mongoose.models.Project || mongoose.model("Project", ProjectSchema);

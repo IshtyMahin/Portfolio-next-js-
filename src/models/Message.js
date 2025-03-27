@@ -1,16 +1,6 @@
-import mongoose, { Schema, Document } from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
-interface IMessage extends Document {
-  name: string;
-  email: string;
-  message: string;
-  status: "unread" | "read" | "replied" | "archived";
-  reply?: string;
-  repliedAt?: Date;
-  createdAt: Date;
-}
-
-const MessageSchema = new Schema<IMessage>(
+const MessageSchema = new Schema(
   {
     name: { type: String, required: true },
     email: { type: String, required: true },
@@ -28,5 +18,4 @@ const MessageSchema = new Schema<IMessage>(
   }
 );
 
-export default mongoose.models.Message ||
-  mongoose.model<IMessage>("Message", MessageSchema);
+export default mongoose.models.Message || mongoose.model("Message", MessageSchema);
