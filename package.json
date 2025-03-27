@@ -34,15 +34,8 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "@types/jsonwebtoken": "^9.0.9",
-    "@types/node": "^20.17.27",
-    "@types/nodemailer": "^6.4.17",
-    "@types/react": "^19.0.12",
-    "@types/react-dom": "^19",
-    "@types/react-syntax-highlighter": "^15.5.13",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
     "tailwindcss": "^4.0.16",
-    "typescript": "^5"
   }
 }
